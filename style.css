@@ -1,24 +1,77 @@
-nav {
-    width: 100vw;
-    padding-top: 13px;
+html {
+    height: 100%;
+    min-height: 100%;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
     font-size: 13px;
-    display: flex;
+    opacity: 0.75;
+    grid-template-areas: "about store . gmail image menu-grid sign-in";
 }
 
-li {
-    list-style-type: none;
-    margin: 0 2vw;
+/*
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#store{
+    grid-area: store;
+}
+#gmail {
+    grid-area: gmail;
+}
+#image {
+    grid-area: image;
+}
+#menu-icon {
+    grid-area: menu-icon;
+}
+#sign-in {
+    grid-area: sign-in;
+}
+*/
+/*
+#button1 {
+    background: #4285f4;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+*/
+
+/*
+img {
+    height: 20px;
+    width: 20px;
+}
+*/
+
+#main {
+
 }
 
+#footer {
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 50px;
+    grid-template-rows: 50px;
+}
 a {
     text-decoration: none;
+    font-family: Arial, sans-serif;
     color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 body{
