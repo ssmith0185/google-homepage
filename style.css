@@ -4,66 +4,69 @@ html {
 }
 
 #navbar {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
     display: grid;
-    grid-template-columns: 50px 1fr 50px 50px 50px 50px;
+    grid-template-columns: 50px 1fr 50px 50px 30px 50px;
     grid-template-rows: 50px;
     font-size: 13px;
     opacity: 0.75;
-    grid-template-areas: "about store . gmail image menu-grid sign-in";
 }
-
-/*
-#about{
-    grid-area: about;
-    justify-self: center;
-    align-self: center;
-}
-#store{
-    grid-area: store;
-}
-#gmail {
-    grid-area: gmail;
-}
-#image {
-    grid-area: image;
-}
-#menu-icon {
-    grid-area: menu-icon;
-}
-#sign-in {
-    grid-area: sign-in;
-}
-*/
-/*
-#button1 {
-    background: #4285f4;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
-    color: #fff;
-}
-*/
-
-/*
-img {
-    height: 20px;
-    width: 20px;
-}
-*/
 
 #main {
-
+    padding: 109px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#footer {
-    background-color: #222;
-    display: grid;
-    grid-template-columns: 50px 1fr 50px 50px;
-    grid-template-rows: 50px;
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 30px 0px;
 }
+
+#searchbar {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+	border-radius: 2px;
+}
+
+#menu-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+#sign-in {
+    padding: 0 12px;
+    background:#4683ea;
+    line-height: 28px;
+	border-radius:2px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bolder;
+    text-decoration:none;
+    outline: none;
+    position: relative;
+}
+
+#sign-in:active {
+	position:relative;
+	top:1px;
+}
+
 a {
     text-decoration: none;
     font-family: Arial, sans-serif;
@@ -72,8 +75,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-body{
-    background-color: white;
 }
