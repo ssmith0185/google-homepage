@@ -16,27 +16,57 @@ html {
 
 #main {
     padding: 109px;
+    display: inline-block;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
+    display: block;
     padding: 0px 0px 30px 0px;
 }
 
 #searchbar {
-    display: flex;
-    justify-content: center;
-    outline: none;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     padding: 8px;
+    border-radius: 25px;
 }
 
-input {
-    padding: 10px;
-    width: 50%;
-	border-radius: 2px;
+#search-btn {
+    background: #f8f8f8;
+    border-radius: 4px;
+    color: #5F6368;
+    display: inline-block;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    /*height: 36px;*/
+    min-width: 54px;
+    text-align: center;
+    cursor:pointer;
+    font-size:14px;
+    font-family: Arial, sans-serif;
+    text-decoration:none;
+    position: relative;
+}
+
+#lck-btn {
+    background: #f8f8f8;
+    border-radius: 4px;
+    color: #5F6368;
+    display: inline-block;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    /*height: 36px;*/
+    min-width: 54px;
+    text-align: center;
+    cursor:pointer;
+    font-size:14px;
+    font-family: Arial, sans-serif;
+    text-decoration:none;
+    position: relative;
 }
 
 #menu-icon {
@@ -48,7 +78,9 @@ input {
 
 #sign-in {
     padding: 0 12px;
+    background-image: -moz-linear-gradient(top, #4387fd, #4683ea);
     background:#4683ea;
+    margin: auto;
     line-height: 28px;
 	border-radius:2px;
 	display:inline-block;
